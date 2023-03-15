@@ -15,6 +15,21 @@ for (let i = 1; i <= 100; i++) {
 }
 
 // Part - 3
+const printNumberInBracket = (n) => {
+	let output = "";
+	let start = 1;
+	while (start <= n) {
+		if (start === n)
+			output += `[${start}]`;
+		else
+			output += `[${start}] `;
+		start++;
+	}
+	console.log(output);
+}
+printNumberInBracket(6);
+
+// Part - 4
 const sumNth = (n) => {
     let sum = 0, start = 1;
     while (start <= n) {
